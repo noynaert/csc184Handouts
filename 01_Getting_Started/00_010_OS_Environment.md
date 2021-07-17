@@ -1,8 +1,26 @@
-# 01.010 OS Environment for this course
+# 00.010 OS Environment for this course
+
+## Assumed skill level
+
+This is an introductory course in programming.  No previous programming experience is assumed.
+
+What is assumed is that you have some level of skill with computers in general, and with your operating system.  At a minimum you should know how to do the following things on your computer system
+
+* Create folders or directories
+* Install software
+* Open a terminal or command prompt
+* Move files and directories
+* Upload and Download files
 
 ## Operating System
 
 You should be able to do this course in Linux, Windows, or MacOS.  However, I will only be able to help with Linux and Windows.
+
+For this course I am assuming that you are using a reasonably current version of your operating system.
+
+* Windows 10 or Windows 11 should be fine.  No one should be using Windows 7.  And never admit in public to ever having used Windows 8.
+* On Linux you should be using something derived from Ubuntu 20.04 or later, or Fedora 32 or later.  Ubuntu 18.04 would work, but it will tend to default to Python2 instead of Python3.
+
 
 ### Linux 
 
