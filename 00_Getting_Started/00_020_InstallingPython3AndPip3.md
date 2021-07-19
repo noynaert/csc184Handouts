@@ -31,7 +31,7 @@ Here is the message I got back under Ubuntu and Windows 10
 | OS| Message |
 |---|---|
 | **Linux** | ```pip 20.3.4 from /usr/lib/python3/dist-packages/pip (python 3.9)```   |
-| **Windows 10** | ```.``` |
+| **Windows 10** | ```pip 20.2.3 from c:\python39\lib\site-packages\pip (python 3.9``` |
 
 
 ***If you have Python version 3 and Pip installed then you may skip the following.***
