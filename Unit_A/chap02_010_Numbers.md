@@ -1,12 +1,12 @@
-# Chapter 02 -- Variables, Expressions, and Statements
+# Chapter 02 -- Part 010 -- Numbers and Numeric Operators
 
 This chapter covers some of the things that the book covers in chapter 1.
 
 ## Numeric Data Types
 
-Python has three types of numbers
+$ has three types of numbers
 
-* ***int*** Int is short for "integer."  Ints are whole numbers that do not have decimal points
+* ***int*** Int is short for "integer."  SInts are whole numbers that do not have decimal points
 * ***float*** Float numbers have decimal points.
 * ***complex*** Python has native representation of complex numbers.  We will not use complex numbers.
 
@@ -37,7 +37,7 @@ The parenthesis indicates that type is a function.
 
 "Arguments" or "Parameters" go inside the parenthesis.
 
-The type function returns the data type phython is using for that expression.
+The type function returns the data type Python is using for that expression.
 
 What does each of the following print when you type it into the interpreter?
 
@@ -45,7 +45,7 @@ What does each of the following print when you type it into the interpreter?
     type(7.)
     type(1.e2)
 
-## Arithmetic Operators (a partial list)
+## Arithmetic Operators (a very short list)
 
 Symbol | Meaning
 :---:|:--
@@ -53,8 +53,55 @@ Symbol | Meaning
 -|Subtraction
 *|Multiplication
 /|Division (Always returns a float)
+**|Exponentiation
+
+#### Operators and Data Type
+
+When two integers are added, subtracted, or multiplied the result is an integer.  Exponentiation involving integers also returns an integer.
+
+When two integers are divided with / the result is converted to a float.
+
+```
+>>> 5/2
+2.5
+```
+
+If the arithmetic involves mixed types (int and float) then the result is a float.
+
+```
+>>> 5 + 0
+5
+>>> 5 + 0.
+5.0
+```
+
+### Forcing type conversion with a "Cast"
+
+A cast is used to force a type conversion.
+
+The int() function converts the type of a number to an integer and float() converts the type of a number into a real number.
+
+The int() function ***truncates*** the fractional part of the number.  It *does not round.*
+
+```
+>>> int(2.)
+2
+>>> int(2.2)
+2
+>>> int(2.5)
+2
+>>> int(2.999999)
+2
+>>> int(-2.999)
+-2
+```
+
+### More Arithmetic Operators
+
+The following are additional operators that are commonly used.
+
+Symbol | Meaning
+:---:|:---
 %|Mod  (Gives the remainder.  For now only use with int)
-
-## Converting between data types
-
+//|Integer Division
 
