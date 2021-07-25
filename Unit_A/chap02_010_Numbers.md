@@ -2,9 +2,11 @@
 
 This chapter covers some of the things that the book covers in chapter 1.
 
+We will be doing a lot of arithmetic in this chapter.  We will also be discussing things you probably learned in a math course such as "Order of Operations."  If you are unsure about Algebraic order of operations please contact the instructor.
+
 ## Numeric Data Types
 
-$ has three types of numbers
+Python has three types of numbers
 
 * ***int*** Int is short for "integer."  SInts are whole numbers that do not have decimal points
 * ***float*** Float numbers have decimal points.
@@ -94,6 +96,60 @@ The int() function ***truncates*** the fractional part of the number.  It *does 
 2
 >>> int(-2.999)
 -2
+>>> float(2)
+2.0
+```
+
+### Order of operation
+
+As in regular Algebra, the the different operators have different precedence.
+
+1. Exponentiation happens before multiplcation/division operators and addition/subtraction operators
+2. Multiplication and division operations happen before addition and subtraction.
+3. Addition and Subtraction happen as the last of the arithmetic operations.
+
+Multiplation/Division, Addition/Subtraction work left to right.  Exponentiation operates right to left.
+
+```
+>>> 2*3+4
+10
+>>> 4+2*3
+10
+>>> 2**3+1
+9
+>>> 2**2+1
+5
+```
+
+#### Parenthesis()
+
+As in Algebra, parenthesis can alter the order of operation.
+
+```
+>>> 1 + 2 * 3
+7
+>>> (1 + 2) * 3
+9
+>>> 1 + (2 * 3)
+7
+```
+
+#### Positive and Negative signs
+
+The plus and minus signs can be confusing because they are used for two purposes.   
+
+* They can indicate addition and subtraction
+* They can indicate whether a number is positive and negative.  This use is called a ***unary operator*** in some computer languages.
+
+In some languages the leading + and - of a unary operator have a very high priority.  But I suggest that in Python you think of the unary + and - signs to be part of the number itself.  
+
+You can get some potentially confusing expressions, but just take time to sort them out.  Also, it can help a lot to include blank spaces in the expression to clarify the meaning.  Leading plus signs are allowed, but they are rarely used because of potential confusion.
+
+```
+>>> 3+-2
+1
+>>> 3 + -2
+1
 ```
 
 ### More Arithmetic Operators
@@ -105,3 +161,27 @@ Symbol | Meaning
 %|Mod  (Gives the remainder.  For now only use with int)
 //|Integer Division
 
+Note that % and // are forms of division.  Therefore they occur before addition and subtraction.
+
+When we do %, the mod or modulo operator we do the division and keep the remainder.  
+
+Mod seems like kind of a useless operation, but it is actually used fairly often in programming.  
+
+```
+>>> 17 % 3
+2
+```
+
+Integer division keeps the quotient of division and ignores the remainder.  
+
+```
+>>> 17 % 3
+2
+```
+
+Be careful when doing integer division involving negative numbers.  A lot of people assume it will give the same result as the int() function.
+
+```
+>>> 17 % 3
+2
+```
