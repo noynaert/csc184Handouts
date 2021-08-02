@@ -80,3 +80,39 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> y
 3
 ```
+
+## Rules for Python variable names.
+
+### Absolute Rules
+
+* Variable names must starte with either a letter or and underscore _.  Note that variable names **cannot** start with a digit.
+* After the first character, the remaining characters must be letters, digits, or underscores.
+* Variable names are *case sensitive*  taxRate and TaxRate would be two different variables.
+* The variable name must not be a Python keyword.
+
+You may get a list of keywords by going into the interpreter and typing ```help('keywords')```
+
+```text
+>>> help ("keywords")
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               break               for                 not
+None                class               from                or
+True                continue            global              pass
+__peg_parser__      def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+```
+
+Practical rules and strong suggestions
+
+* Do not start variable names with and underscore or double underscore.  By convention these variable have a specific use.
+* Variable names should be descriptive of the purpose of the variable.  Avoid using "cute" names like anime names that have no obvious connection.  (Obvious to people who have to the next random programmer who has to maintain your code.)
+* Python variables may be any length.  But you should keep then short enough to be able to type then quickly without errors
+* Avoid single-character variable names except for variables that have special meanings.  For example, when a programmer sees the variable ```n``` they usually expect n to hold the total number of items on some type of list or the number of records processed.  ```s``` and ```t`` usually refer to short-term storage of a string.
+* Use lower case letters only for the second and following words in compound variable names.  For example ```taxRate``` or ```firstName```.  This is called "Camel Case."
+* Do not abbreviate variable names.  If you abbreviate then you have to remember how you abbreviated.
