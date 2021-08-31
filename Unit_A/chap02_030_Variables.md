@@ -53,7 +53,8 @@ My strong recommendation is to avoid calling the = symbol as "equals."
 
 When you are reading an assignment statement like "x = 5" should be read as "x *takes on the value of* 5."  Do not read it as "x equals 5"
 
-### Order Matters
+### Order Matters in Python.
+#### *Math Majors, beware*
 
 In Math it doesn't really matter what is on the left side of  the = symbol.  For example, the following are equivalent in mathematics.
 
@@ -62,18 +63,19 @@ x = 5
 5 = x
 ```
 
-In math
+However, in most programming languages, including Python, the order does matter.  The following is a valid Python statement:
 
-However, in most programming languages, including Python, the order does matter.  
+```
+x = x + 1
+```
+
+How does the above statement look to a mathematician?  This is why I advocate read the `=` sign as "Takes on the value of."
 
 Whatever is on the left sign of the = symbol must be able to be assigned a value.  In Python this means it must be a variable.
 
 Think of the = sign as an operator with a very low precedence.   A value passes from right to left across this operator.  In fact, in Python and some other languages may be used to "stack" assignments.  The following example is sometimes useful when more than one variable must be given the same value.
 
 ```
-Python 3.9.5 (default, May 11 2021, 08:20:37) 
-[GCC 10.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
 >>> x = y = 1+2
 >>> x
 3
@@ -84,8 +86,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## Rules for Python variable names.
 
 ### Absolute Rules
-
-* Variable names must starte with either a letter or and underscore _.  Note that variable names **cannot** start with a digit.
++
+* Variable names must start with either a letter or and underscore _.  Note that variable names **cannot** start with a digit.
 * After the first character, the remaining characters must be letters, digits, or underscores.
 * Variable names are *case sensitive*  taxRate and TaxRate would be two different variables.
 * The variable name must not be a Python keyword.
