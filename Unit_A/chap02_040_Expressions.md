@@ -1,6 +1,6 @@
 # 02.040 Expressions
 
-**An *expression* is a conbination of values, variables, and operators.**
+**An *expression* is a combination of values, variables, and operators.**
 
 Expressions return a value when they are evaluated
 

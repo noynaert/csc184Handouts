@@ -1,4 +1,4 @@
-# 02.080 Debugging -- Types of error
+# 02.090 Debugging -- Types of error
 
 ## Types of Errors
 
