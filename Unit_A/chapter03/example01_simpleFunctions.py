@@ -15,10 +15,9 @@ last  = "Smith"
 printName(first, last)
 printName("Joe", "Evans")
 
-double(6)
-double(7.0)
-double("Hello")
+float(6)
+float(7.0)
 
 number = 7
-increment(number)
+printIncrement(number)
 print("But back in the main program and number is",number)
