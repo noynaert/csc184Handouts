@@ -1,0 +1,146 @@
+
+
+2021-09-21 06:08              xxxxyyyyyyy hmwk01.py               Page 1
+
+
+    1	#hmwk01.py
+    2	#____ _______
+    3	#September 09, 2021
+    4	#This program converts Fahrenheit to Celsius
+    5	
+    6	#Asks the user how much fahrenheit
+    7	fahrenheit = float(input("Enter Fahrenheit: ")) 
+    8	
+    9	#Confirms what the user entered
+   10	print("You entered ", fahrenheit , "fahrenheit.") 
+   11	
+   12	#Calculation for conversion
+   13	celsius = float((fahrenheit - 32) * 5/9) 
+   14	
+   15	#confirms the answer
+   16	print(fahrenheit, "Degrees fahrenheit equals" , celsius, "degrees celsius") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ __________________________________
+< No Syntax Errors Found! Great!!! >
+ ----------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+------------------------------ input ../data01.txt -----------------------------
+Data is 212
+
+Enter Fahrenheit: You entered  212.0 fahrenheit.
+212.0 Degrees fahrenheit equals 100.0 degrees celsius
+
+------------------------------ input ../data02.txt -----------------------------
+Data is 32
+
+Enter Fahrenheit: You entered  32.0 fahrenheit.
+32.0 Degrees fahrenheit equals 0.0 degrees celsius
+
+------------------------------ input ../data03.txt -----------------------------
+Data is -40.0
+
+Enter Fahrenheit: You entered  -40.0 fahrenheit.
+-40.0 Degrees fahrenheit equals -40.0 degrees celsius
+
+------------------------------ input ../data04.txt -----------------------------
+Data is 4.9E-2
+
+Enter Fahrenheit: You entered  0.049 fahrenheit.
+0.049 Degrees fahrenheit equals -17.750555555555554 degrees celsius
+
+------------------------------ input ../data05.txt -----------------------------
+Data is 101
+
+Enter Fahrenheit: You entered  101.0 fahrenheit.
+101.0 Degrees fahrenheit equals 38.333333333333336 degrees celsius
+
+------------------------------ input ../data06.txt -----------------------------
+Data is 0
+
+Enter Fahrenheit: You entered  0.0 fahrenheit.
+0.0 Degrees fahrenheit equals -17.77777777777778 degrees celsius
+
+------------------------------ input ../data07.txt -----------------------------
+Data is -100
+
+Enter Fahrenheit: You entered  -100.0 fahrenheit.
+-100.0 Degrees fahrenheit equals -73.33333333333333 degrees celsius
+
+------------------------------ input ../data08.txt -----------------------------
+Data is 10000
+
+Enter Fahrenheit: You entered  10000.0 fahrenheit.
+10000.0 Degrees fahrenheit equals 5537.777777777777 degrees celsius
+
+------------------------------ input ../data09.txt -----------------------------
+Data is 32.000000000005
+
+Enter Fahrenheit: You entered  32.000000000005 fahrenheit.
+32.000000000005 Degrees fahrenheit equals 2.779011588750614e-12 degrees celsius
+
+------------------------------ input ../data_BAD_DATA.txt -----------------------------
+Data is ZERO
+
+Enter Fahrenheit: Traceback (most recent call last):
+  File "/home/noynaert/classes/grading/csc184/hmwk01/cassitygage/hmwk01.py", line 7, in <module>
+    fahrenheit = float(input("Enter Fahrenheit: ")) 
+ValueError: could not convert string to float: 'ZERO'
+ _____________
+< Run aborted >
+ -------------
+        \   ^__^
+         \  (xx)\_______
+            (__)\       )\/\
+             U  ||----w |
+                ||     ||
+
+NOTE THAT THE LAST DATASET SHOULD HAVE ENDEDED IN AN ERROR
+BECAUSE THE DATA FILE CONTAINED TEXT, NOT A NUMBER.
