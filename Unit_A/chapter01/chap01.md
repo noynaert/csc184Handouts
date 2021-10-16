@@ -6,7 +6,7 @@ Right now a lot of stuff is getting thrown at you.  For right now we will just h
 
 This course is about writing programs. 
 
-A *program* is a set of instructions the tell the computer how to do some task.  That task can be a lot of different things.  Examples include:
+A *program* is a set of instructions that tell the computer how to do some task.  That task can be a lot of different things.  Examples include:
 
 * The results of a calculation
 * Play or manage a game
