@@ -86,7 +86,7 @@ Think of the = sign as an operator with a very low precedence.   A value passes 
 ## Rules for Python variable names.
 
 ### Absolute Rules
-+
+
 * Variable names must start with either a letter or and underscore _.  Note that variable names **cannot** start with a digit.
 * After the first character, the remaining characters must be letters, digits, or underscores.
 * Variable names are *case sensitive*  taxRate and TaxRate would be two different variables.
