@@ -93,11 +93,15 @@ That position out in memory does not get changed.  However, the address in the v
 
 ```python
 # returns index of first occurrence.  Returns -1 if not found
-def find(word, letter):
-  found = -1
+def find(word, character):
+  foundAt = -1 #-1 means not found yet.
   i = 0
-  while not found and i < len(word):
-
+  while foundAt == -1 and i < len(word):
+      if word[i] == character:
+          foundAt = i
+      i += 1
+      
+  return foundAt
 ```
 
 ### containing (boolean return value)
