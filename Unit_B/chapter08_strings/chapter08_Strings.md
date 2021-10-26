@@ -89,6 +89,8 @@ That position out in memory does not get changed.  However, the address in the v
 
 ## Searching
 
+### Finding the first occurrence  (integer return value)
+
 ```python
 # returns index of first occurrence.  Returns -1 if not found
 def find(word, letter):
@@ -98,4 +100,71 @@ def find(word, letter):
 
 ```
 
+### containing (boolean return value)
+
+```python
+def contains(word, letter):
+    found = False
+    i = 0;
+    while not found and i < len(word):
+        found = (word[i] == letter)
+        
+    return found
+```
+
 ## Counting
+
+```python
+def count(word, letter):
+    counter = 0
+    
+    for ch in word:
+        if ch == letter:
+            counter += 1
+    
+    return counter 
+```
+
+## String methods
+
+[https://www.w3schools.com/python/python_ref_string.asp](https://www.w3schools.com/python/python_ref_string.asp)
+
+### format
+
+```python
+price = 5.
+priceMessage = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+```
+
+## Slicing
+
+## Examples of input validation
+
+```python
+# gets a word of length > 0
+def getWord():        
+    word = input("Type a word or words ")
+    while(len(word) == 0):
+        word = input("Type a word or words (must have at least 1 character) ")
+    return word
+
+# gets a single character or
+def getCharacter():    
+    character = input("Type a character ")
+    while(len(character) != 1): 
+        if len(character) != 1:
+            print("Type a single character")
+        character = input("Type a character ")
+    return character
+
+# returns a letter of the English alphabet
+def getLetter():
+    letter = input("Type a letter ")
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    while len!=1 and not contains(alphabet, letter.lower()):
+            letter = input("Type a letter of the English alphabet ")
+
+    return letter
+
+```
