@@ -1,6 +1,7 @@
 #Reads files
 
-input = open('words.txt','r')
+#input = open('words.txt','r')
+input = open('http://woz.cs.missouriwestern.edu/data/docs/moby.txt')
 
 for line in input:
     line = line.strip()
