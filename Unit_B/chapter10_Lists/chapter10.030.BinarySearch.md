@@ -4,6 +4,27 @@ Binary search requires an array to be sorted.
 
 Binary search cuts a list in half and determines which half of the array would contain the item we are looking for.  This cutting in half continues until the item is located or the search area is empty.
 
+## Sorting
+
+
+```python
+fruits = ["grape","banana","fig","mango","date","cherry","grapefruit",
+          "strawberry", "apple", "kiwi", "pineapple", "orange"]
+
+def printList(array, n):
+    print("---------------")
+    for i in range(n):
+        print(f"[{i:2}] {array[i]}")
+    print("---------------")
+
+printList(fruits, len(fruits))
+fruits.sort()
+printList(fruits, len(fruits))
+```
+
+The sort routine is case sensitive.  Upper case letters will always sort ahead of lowercase.
+
+
 ## Binary search algorithm
 
 The following is an algorighm written in *pseudocode.*  Pseduocode conveys the ideas about the steps involved without worrying about syntax details.  The algorithm could be coded into many different languages.  
